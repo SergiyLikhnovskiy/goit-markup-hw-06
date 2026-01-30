@@ -22,8 +22,10 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  /*max-width: 1158px;*/
+  width: 100%;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .section {
@@ -195,14 +197,15 @@ img {
   background-color: #ffffff;
 }
 .features li {
-  width: calc((100% - 72px) / 4);
+  /*width: calc((100% - 72px) / 4);*/
 }
+
 .antena {
   align-items: center;
   color: #f4f4fd;
 }
 
-.icon {
+/*.icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,12 +215,16 @@ img {
   border-radius: 4px;
   background-color: #f4f4fd;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
+  overflow: hidden;*
+}*/
 
 .section-title {
-  gap: 24px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .features h3 {
   font-family: "Roboto";
@@ -228,6 +235,7 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
   padding-top: 8px;
+  text-align: center;
 }
 .features p {
   font-size: 16px;
@@ -796,4 +804,30 @@ img {
 }
 .footer-form-icon {
   fill: #fff;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .section-title {
+    gap: 72px 24px;
+  }
+  .features h3 {
+    text-align: start;
+  }
+  .features li {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+  .features li {
+    width: calc((100% - 72px) / 4);
+  }
 }
