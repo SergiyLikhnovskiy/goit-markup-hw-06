@@ -292,7 +292,7 @@ img {
   margin: 0 auto;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-one.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -368,7 +368,6 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
   text-align: center;
-  padding-top: 8px;
 }
 
 .features p {
@@ -984,6 +983,12 @@ img {
     align-items: center;
     gap: 40px;
   }
+  .title {
+    padding: 112px 0;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-two.jpg);
+  }
   .contacts {
     display: block;
     margin-left: auto;
@@ -994,6 +999,13 @@ img {
     gap: 12px;
     flex-direction: column;
   }
+  .team-section {
+    gap: 64px 24px;
+  }
+  .team-section li {
+    width: 264px;
+  }
+
   .header-nav .logo {
     padding: 24px 0;
     margin-right: 120px;
@@ -1016,6 +1028,16 @@ img {
 
   .container-portolio-img {
     width: calc((100% - 48px) / 2);
+  }
+  .container-portfolio {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .container-portolio-img {
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   .footer {
