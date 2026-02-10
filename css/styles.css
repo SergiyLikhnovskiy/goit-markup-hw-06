@@ -287,7 +287,7 @@ img {
 
 .title {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
   max-width: 1440px;
   margin: 0 auto;
   background-image:
@@ -300,12 +300,12 @@ img {
 
 .title h1 {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
+  max-width: 288px;
   margin: 0 auto 48px;
 }
 
@@ -382,19 +382,6 @@ img {
   display: none;
   align-items: center;
   color: #f4f4fd;
-}
-
-.feauter .icon {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  overflow: hidden;
 }
 
 .team {
@@ -993,6 +980,11 @@ img {
     display: block;
     margin-left: auto;
   }
+  . title h1 {
+    font-size: 56px;
+    max-width: 496px;
+    margin: 0 auto 48px;
+  }
   .address {
     display: flex;
     align-items: center;
@@ -1117,7 +1109,11 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-
+  . title h1 {
+    font-size: 56px;
+    max-width: 496px;
+    margin: 0 auto 48px;
+  }
   .page-nav {
     display: flex;
     align-items: center;
@@ -1146,11 +1142,25 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
+  .features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
   .features h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
+    padding-top: 8px;
   }
 
   .features p {
@@ -1222,21 +1232,6 @@ img {
     margin-left: auto;
   }
 }
-@media screen and (min-resolution: 2dppx) {
-  .title {
-    background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-one.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .title {
-    background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-two.jpg);
-  }
-}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1281,6 +1276,29 @@ img {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-resolution: 2dppx) {
+  .title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-one.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-two.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+  .title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-three.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
