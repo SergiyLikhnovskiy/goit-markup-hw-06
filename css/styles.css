@@ -39,7 +39,7 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -301,12 +301,12 @@ img {
 .title h1 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.07;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 288px;
-  margin: 0 auto 48px;
+  max-width: 216px;
+  margin: 0 auto 72px;
 }
 
 .my-button {
@@ -906,11 +906,6 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-policy-text {
-  display: inline;
-  flex: 1;
-}
 .modal-check {
   width: 16px;
   height: 16px;
@@ -953,6 +948,13 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+    max-width: 584px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -983,6 +985,7 @@ img {
   .title h1 {
     font-size: 56px;
     max-width: 496px;
+    line-height: 1.07;
     margin: 0 auto 48px;
   }
   .address {
@@ -1054,7 +1057,9 @@ img {
     justify-content: flex-start;
     padding-bottom: 72px;
   }
-
+  .features .section-title > li > .icon {
+    display: none;
+  }
   .footer-subscribe-text {
     text-align: left;
   }
@@ -1079,13 +1084,16 @@ img {
   .container {
     max-width: 1158px;
     padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
   }
 
   .header-nav .logo {
     margin-right: 76px;
   }
-
+  .section {
+    padding: 120px 0;
+  }
   .address {
     flex-direction: row;
     gap: 40px;
@@ -1109,9 +1117,10 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  . title h1 {
+  .title h1 {
     font-size: 56px;
     max-width: 496px;
+    line-height: 1.07;
     margin: 0 auto 48px;
   }
   .page-nav {
@@ -1131,7 +1140,7 @@ img {
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office-three.jpg);
   }
-  .icon {
+  .features .section-title > li > .icon {
     align-items: center;
     justify-content: center;
     width: 264px;
@@ -1142,19 +1151,6 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
-  .features .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 264px;
-    height: 112px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background-color: #f4f4fd;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
-
   .features h3 {
     font-weight: 500;
     font-size: 20px;
@@ -1170,11 +1166,6 @@ img {
   .antena {
     display: block;
   }
-
-  .icon {
-    display: flex;
-  }
-
   .features li {
     width: calc((100% - 72px) / 4);
   }
@@ -1236,16 +1227,12 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   background-color: rgba(46, 47, 66, 0.4);
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1280,7 +1267,7 @@ img {
   .title {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-one.jpg);
+      url(../images/people-office-one@2x.jpg);
   }
 }
 
@@ -1288,7 +1275,7 @@ img {
   .title {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-two.jpg);
+      url(../images/people-office-two@2x.jpg);
   }
 }
 
@@ -1296,7 +1283,7 @@ img {
   .title {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-three.jpg);
+      url(../images/people-office-three@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
