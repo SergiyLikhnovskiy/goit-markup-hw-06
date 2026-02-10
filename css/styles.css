@@ -986,7 +986,7 @@ img {
     font-size: 56px;
     max-width: 496px;
     line-height: 1.07;
-    margin: 0 auto 48px;
+    margin: 0 auto 36px;
   }
   .address {
     display: flex;
@@ -1141,6 +1141,7 @@ img {
       url(../images/people-office-three.jpg);
   }
   .features .section-title > li > .icon {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 264px;
@@ -1150,6 +1151,7 @@ img {
     background-color: #f4f4fd;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    margin-bottom: 8px;
   }
   .features h3 {
     font-weight: 500;
