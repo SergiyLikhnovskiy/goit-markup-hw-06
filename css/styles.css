@@ -1291,6 +1291,9 @@ img {
     width: 408px;
     padding: 72px 24px 24px;
   }
+  .footer-form {
+    display: flex;
+    justify-content: flex-start;
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   footer .container.bank.footer-container {
