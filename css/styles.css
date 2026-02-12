@@ -10,7 +10,6 @@ ol {
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -210,7 +209,6 @@ img {
 }
 
 .contacts {
-  display: none;
   margin-left: auto;
   font-style: normal;
 }
@@ -276,10 +274,10 @@ img {
 
 .address .link {
   display: block;
-  padding: 0;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -486,11 +484,12 @@ img {
   row-gap: 48px;
 }
 .container-portolio-img {
-  flex: 1 1 100%;       
+  flex: 1 1 100%;
   max-width: 100%;
-  min-width: 0;        
+  min-width: 0;
 }
-.container-portolio-img {
+
+.container-portfolio-img {
   background: #ffffff;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
@@ -544,7 +543,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-portolio-img:hover .portfolio-item-text {
+.container-portfolio-img:hover .portfolio-item-text {
   transform: translateY(0);
 }
 
@@ -1022,14 +1021,14 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .container-portolio-img {
+  .container-portfolio-img {
     width: calc((100% - 48px) / 2);
   }
   .container-portfolio {
     column-gap: 24px;
     row-gap: 72px;
   }
-  .container-portolio-img {
+  .container-portfolio-img {
     box-shadow:
       0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -1086,7 +1085,6 @@ img {
     padding-right: 15px;
     margin: 0 auto;
   }
-
   .header-nav .logo {
     margin-right: 76px;
   }
@@ -1150,7 +1148,6 @@ img {
     background-color: #f4f4fd;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    margin-bottom: 8px;
   }
   .features .section-title > li > .icon .antena {
     display: block;
@@ -1182,14 +1179,13 @@ img {
   .team-section li {
     width: calc((100% - 72px) / 4);
   }
-
-  .container-portolio-img {
+  .container-portfolio-img {
     width: calc((100% - 48px) / 3);
   }
-  .container-portolio-img {
+  .container-portfolio-img {
     box-shadow: none;
   }
-  .container-portolio-img:hover {
+  .container-portfolio-img:hover {
     cursor: pointer;
     box-shadow:
       0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -1297,15 +1293,14 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  footer .container.bank.footer-container { 
+  .container .footer-container {
     max-width: 584px;
-    margin :0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
   }
-  .bank > :nth-child(2) {
-    margin-right: 0;
-}}
+}
 .modal-close {
   position: absolute;
   top: 24px;
