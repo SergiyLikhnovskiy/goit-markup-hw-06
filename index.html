@@ -94,7 +94,7 @@
     </header>
     <main>
       <!--Section hero-->
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
@@ -163,7 +163,11 @@
           <ul class="team-card">
             <li class="team-item">
               <img
-                src="./images/MarkGuerrero.jpg"
+                srcset="
+                  ./images/team/MarkGuerrero.jpg 1x,
+                  ./images/team/Mark@2x.jpg      2x
+                "
+                src="./images/team/MarkGuerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -205,6 +209,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/TomFord.jpg 1x,
+                  ./images/team/Tom@2x.jpg  2x
+                "
                 src="./images/TomFord.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -247,6 +255,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/CamilaGarcia.jpg 1x,
+                  ./images/team/Camila@2x.jpg    2x
+                "
                 src="./images/CamilaGarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -289,6 +301,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/DanielWilson.jpg 1x,
+                  ./images/team/Daniel@2x.jpg    2x
+                "
                 src="./images/DanielWilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -340,6 +356,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-one.jpg    1x,
+                    ./images/porfolio/portfolio-one@2x.jpg 2x
+                  "
                   src="./images/portfolio-one.jpg"
                   alt="Banking App"
                   width="360"
@@ -359,6 +379,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-two.jpg    1x,
+                    ./images/porfolio/portfolio-two@2x.jpg 2x
+                  "
                   src="./images/portfolio-two.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -378,6 +402,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-three.jpg    1x,
+                    ./images/porfolio/portfolio-three@2x.jpg 2x
+                  "
                   src="./images/portfolio-three.jpg"
                   alt="Meditation App"
                   width="360"
@@ -397,6 +425,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-four.jpg    1x,
+                    ./images/porfolio/portfolio-four@2x.jpg 2x
+                  "
                   src="./images/portfolio-four.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -416,6 +448,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-five.jpg    1x,
+                    ./images/porfolio/portfolio-five@2x.jpg 2x
+                  "
                   src="./images/portfolio-five.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -435,6 +471,10 @@
             <li class="portfolio-item">
               <div class="portfolio-hover-item">
                 <img
+                  srcset="
+                    ./images/porfolio/portfolio-six.jpg    1x,
+                    ./images/porfolio/portfolio-six@2x.jpg 2x
+                  "
                   src="./images/portfolio-six.jpg"
                   alt="Online Courses"
                   width="360"
@@ -520,7 +560,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="button-close">
           <svg class="icon-close" width="8" height="8">
@@ -593,8 +633,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="modal-link"> Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="modal-link"> Privacy Policy</a></span
+              >
             </label>
           </div>
           <button type="submit" class="modal-button-send">Send</button>

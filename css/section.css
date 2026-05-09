@@ -1,8 +1,8 @@
 .section {
   padding: 96px 0;
 
-  @media screen and (min-width: 1158px) {
-    /* padding: 120px 0; */
+  @media screen and(min-width: 1158px) {
+    padding: 120px 0;
   }
 }
 .section-title {
