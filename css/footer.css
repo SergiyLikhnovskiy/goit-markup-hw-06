@@ -14,9 +14,6 @@
 .social-media-text,
 .footer-subscribe-text {
   margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-
   letter-spacing: 0.02em;
   color: #fff;
   @media screen and (max-width: 767px) {
@@ -70,7 +67,6 @@ footer .social-link:focus {
   }
 }
 .footer-subscribe-text {
-  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -117,9 +113,7 @@ footer .social-link:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
   cursor: pointer;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
